@@ -4,8 +4,21 @@ body {
   padding-bottom: 20px;
 }
 
-/*.btn-info {
-  color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+.navbar .navbar-header .navbar-brand {
+  color: orange;
+  text-decoration: underline;
+}
+
+.navbar .navbar-header .navbar-brand:hover{
+  color: orange;
+} 
+
+.navbar .collapse .navbar-collapse .nav .navbar-nav .asdf{
+  color: orange;
+}
+
+/*.navbar .navbar-header {
+	color: orange;
+	background-color: orange;
+	border-color: orange;
 }*/
