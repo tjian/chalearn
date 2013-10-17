@@ -1,4 +1,14 @@
 Chalearn::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/signin"
+
+  get "static_pages/signup"
+
+  get "static_pages/challenges"
+
+  get "static_pages/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
