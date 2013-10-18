@@ -3,3 +3,22 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+.navbar .navbar-header .navbar-brand {
+  color: orange;
+  text-decoration: underline;
+}
+
+.navbar .navbar-header .navbar-brand:hover{
+  color: orange;
+} 
+
+.navbar .collapse .navbar-collapse .nav .navbar-nav .asdf{
+  color: orange;
+}
+
+/*.navbar .navbar-header {
+	color: orange;
+	background-color: orange;
+	border-color: orange;
+}*/
