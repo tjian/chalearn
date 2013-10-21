@@ -1,6 +1,6 @@
 ChalearnSun::Application.routes.draw do
   
-  root :to => 'static_page#home'
+  root :to => 'static_page#index'
   get "static_page/about"
   get "static_page/contact"
   get "static_page/index"
