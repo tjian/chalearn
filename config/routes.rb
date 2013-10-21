@@ -1,11 +1,21 @@
-ChalearnSun::Application.routes.draw do
-  
-  root :to => 'static_page#index'
-  get "static_page/about"
-  get "static_page/contact"
-  get "static_page/index"
-  get "static_page/wizard"
+Chalearn::Application.routes.draw do
 
+  # resources :static_pages
+  # # map '/' to be a redirect to '/movies'
+  # root :to => redirect('/home')
+  get "static_pages/home"
+
+  get "static_pages/signin"
+
+  get "static_pages/signup"
+
+  get "static_pages/challenges"
+
+  get "static_pages/about"
+
+  get "static_pages/contact"
+
+  get "static_pages/wizard"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

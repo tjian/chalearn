@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ChalearnSun::Application.load_tasks
+Chalearn::Application.load_tasks
