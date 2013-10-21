@@ -1,0 +1,58 @@
+<% provide(:title, 'Wizard') %>
+	<div class="row">
+			<div class="center hero-unit">
+				<div class="container">
+		      
+		      <div class="control-group">
+		      	<label for="challenge_title", class="control-label">
+		      		Challenge Title: 
+		      	</label>
+		      	<div class="controls">
+		      		<input name="challenge_title" type="text" value="" id="challenge_title">
+		      	</div>
+		      </div>
+
+		      <div class="control-group">
+		      	<label for="organizer", class="control-label">
+		      		Orgainizer: 
+		      	</label>
+		      	<div class="controls">
+		      		<input name="organizer" type="text" value="" id="organizer">
+		      	</div>
+		      </div>
+
+		      <div class="control-group">
+						<label for="zip" class="control-label">	
+							Zip Code
+						</label>
+						<div class="controls"><input name="zip" type="text" value="" id="zip">
+						</div>
+					</div>
+		      
+		      <div class="control-group">
+		      	<label for="start_date", div class="control-label">
+		      		Start date:
+		      	</label>
+		      	<div class="controls">
+		      		<input name="start_date" type="text" class='datepicker' id="start_date">
+		      		<script type="text/javascript">
+										$(function() { $(".datepicker").datepicker(); });
+									</script>
+		      	</div>
+					</div>
+						
+					<div class="control-group">
+		      	<label for="end_date", div class="control-label">
+		      		End date:
+		      	</label>
+		      	<div class="controls">
+		      		<input name="end_date" type="text" class='datepicker' id="end_date">
+		      		<script type="text/javascript">
+										$(function() { $(".datepicker").datepicker(); });
+									</script>
+		      	</div>
+					</div>
+				</div>
+			</div>
+
+	</div>
