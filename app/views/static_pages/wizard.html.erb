@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Signin Template for Bootstrap</title>
+
+    <title>Wizard tool</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
 
-    <!-- Custom styles for this template -->
-    <link href="../../assets/javascripts/signup.css" rel="stylesheet">
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -55,36 +51,22 @@
     </div>
 
     <div class="container">
-      <h1>Create a new challenge!</h1>
       <form class="upper-half-left">
-        <h3 class="form-challenge-general-title">Challenge's title: </h3>
+        <h4 class="form-challenge-general-title">Challenge's title: </h4>
         <input type="title" class="form-control" placeholder="Title" autofocus>
-        <h3 class="form-challenge-general-organizer">Organizer: </h3>
+        <h4 class="form-challenge-general-organizer">Organizer: </h4>
         <input type="organizer" class="form-control" placeholder="Organizer">
       </form>
       <div class="upper-half-right">
-        <input type="text" data-behaviour='datepicker' >
+        <input type="text" name="start_date">
         <script type="text/javascript">
-          $(document).ready(function(){
-            $('#sandbox-container').datepicker({});
-          })
+            $(function() { $(".datepicker").datepicker(); });
+        </script>
+        <input type="text" name="end_date">
+        <script type="text/javascript">
+            $(function() { $(".datepicker").datepicker(); });
         </script>
       </div>
-    </div>
-
-
-
-    
-    <div class="container">
-      <div class="upper-half-right">
-        <input type="text" data-behaviour='datepicker' >
-        <script type="text/javascript">
-          $(document).ready(function(){
-            $('[data-behaviour~=datepicker]').datepicker();
-          })
-        </script>
-      </div>
-
     </div>
 
 
