@@ -4,6 +4,32 @@ body {
   padding-bottom: 20px;
 }
 
+.upper-half-left {
+	width: 450px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+}
+
+.upper-half-right {
+	width: 450px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: right;
+}
+
+.bottom-form {
+	width: 900px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;	
+}
+
 .navbar .navbar-header .navbar-brand {
   color: orange;
   text-decoration: underline;
@@ -16,6 +42,8 @@ body {
 .navbar .collapse .navbar-collapse .nav .navbar-nav .asdf{
   color: orange;
 }
+
+
 
 /*.navbar .navbar-header {
 	color: orange;

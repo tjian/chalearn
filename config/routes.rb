@@ -3,7 +3,6 @@ Chalearn::Application.routes.draw do
   # resources :static_pages
   # # map '/' to be a redirect to '/movies'
   # root :to => redirect('/home')
-
   get "static_pages/home"
 
   get "static_pages/signin"
@@ -15,6 +14,8 @@ Chalearn::Application.routes.draw do
   get "static_pages/about"
 
   get "static_pages/contact"
+
+  get "static_pages/wizard"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
