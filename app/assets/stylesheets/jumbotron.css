@@ -14,10 +14,11 @@ body {
 }
 
 .upper-half-right {
+	padding-top: 45px;
 	width: 450px;
 	height: 400px;
 	margin: 0;
-	padding: 0;
+	/*padding: 0;*/
 	border: 0;
 	float: right;
 }

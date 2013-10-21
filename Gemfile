@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-
+gem 'twitter-bootstrap-rails'
+gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -24,11 +28,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'bootstrap-datepicker-rails'
-gem 'bootstrap-sass'
-gem 'jquery-rails'
-
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

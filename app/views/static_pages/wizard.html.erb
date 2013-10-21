@@ -10,11 +10,13 @@
     <title>Wizard tool</title>
 
     <!-- Bootstrap core CSS -->
-    <!-- <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" /> -->
+    <link href="../../assets/stylesheets/jumbotron.css" rel="stylesheet">
 
   </head>
 
@@ -51,6 +53,7 @@
     </div>
 
     <div class="container">
+      <h3>Create a new challenge</h3>
       <form class="upper-half-left">
         <h4 class="form-challenge-general-title">Challenge's title: </h4>
         <input type="title" class="form-control" placeholder="Title" autofocus>
@@ -58,17 +61,21 @@
         <input type="organizer" class="form-control" placeholder="Organizer">
       </form>
       <div class="upper-half-right">
-        <input type="text" name="start_date">
+        <input type="text" name="start_date" data-behaviour='datepicker' placeholder="Start date">
         <script type="text/javascript">
-            $(function() { $(".datepicker").datepicker(); });
+          $(document).ready(function(){
+            $('[data-behaviour~=datepicker]').datepicker();
+          })
         </script>
-        <input type="text" name="end_date">
+        <span class="add-on">to</span>
+        <input type="text" name="end_date" data-behaviour='datepicker' placeholder="End date">
         <script type="text/javascript">
-            $(function() { $(".datepicker").datepicker(); });
+          $(document).ready(function(){
+            $('[data-behaviour~=datepicker]').datepicker();
+          })
         </script>
       </div>
     </div>
-
 
       
 
@@ -95,7 +102,8 @@
     ================================================== -->
 
     <!-- Placed at the end of the document so the pages load faster -->
-
+    <!-- // <script src="http://getbootstrap.com/assets/js/jquery.js"></script> -->
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
    
     
   </body>
