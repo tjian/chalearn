@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Chalearn</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= yield(:title) %></title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+   
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Home", static_pages_home_path %></li>
+              <li><%= link_to "Challenges", static_pages_challenges_path %></li>
+              <li><%= link_to "Wizard", static_pages_wizard_path %></li>
+              <li><%= link_to "Sign in", static_pages_signin_path %></li>
+              <li><%= link_to "Sign up", static_pages_signup_path %></li>
+              <li><%= link_to "About", static_pages_about_path %></li>
+              <li><%= link_to "Contact", static_pages_contact_path %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>
+
+

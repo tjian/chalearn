@@ -19,4 +19,7 @@ class StaticPagesController < ApplicationController
   def wizard
   end
 
+  def contact
+  end
+
 end
